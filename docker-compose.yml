@@ -1,0 +1,12 @@
+version: '3'
+services:
+  allegrograph:
+    build: .
+    image: dwitherspoon/allegrograph
+    ports:
+      - "10035:10035"
+    networks:
+      - allegrographnet1
+networks:
+  allegrographnet1:
+    driver: bridge
